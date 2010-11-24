@@ -5,4 +5,4 @@ require "uri"
 
 message = Net::HTTP.get(URI.parse("http://whatthecommit.com/")).match(/<p>(.+)<\/p>/m)[1].strip
 
-%x{git add -u && git commit -m "#{message}"}
+p %x{git add -u && git commit -m "#{message}"}
