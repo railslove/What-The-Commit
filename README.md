@@ -1,4 +1,4 @@
-# Gem Name
+# What The Commit
 
 Description
 
