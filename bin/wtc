@@ -1,8 +1,5 @@
 #!/usr/bin/env ruby
-
 require "net/http"
 require "uri"
-
 message = Net::HTTP.get(URI.parse("http://whatthecommit.com/")).match(/<p>(.+)<\/p>/m)[1].strip
-
-p %x{git add -u && git commit -m "#{message}"}
+puts %x{git add -u && git commit -m "#{message}"}
