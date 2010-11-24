@@ -1,30 +1,20 @@
 # What The Commit
 
-Description
+Commits any changes with a message from [What The Commit](http://whatthecommit.com)
 
 ## How To Install
 
-    sudo gem install campfire_bot
+    gem install wtc
 
 ## Example
 
-    require "rubygems"
-    require "campfire_bot"
+Write some code...
 
-    Campfire::Bot.config do |bot|
-      # Login
-      bot.login do |l|
-        l.username = "username"
-        l.password = "password"
-        l.subdomain = "subdomain"
-        l.room = "room"
-      end
-
-      # Events
-      bot.on(/^How are you?/) do
-        bot.msg("Im very well thank-you")
-      end
-    end.start
+    wtc
+    ##
+    # [master 98d06bb] Shovelling coal into the server...
+    #  1 files changed, 1 insertions(+), 4 deletions(-)
+    ##
 
 ## Note on Patches/Pull Requests
 
@@ -37,7 +27,7 @@ Description
 
 ## Copyright
 
-Copyright (c) 2010 YOUR NAME.
+Copyright (c) 2010 Red Davis.
 
 ## License
 
